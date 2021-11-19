@@ -2,6 +2,6 @@
 
 SELECT Distinct
 strftime('%Y', InvoiceDate) as Year,
-count(InvoiceId) as InvoiceCount
+sum(total) as InvoiceCount
 FROM Invoice
 GROUP BY Year;

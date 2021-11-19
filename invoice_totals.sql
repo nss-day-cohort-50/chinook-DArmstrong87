@@ -1,6 +1,7 @@
 -- Provide a query that shows the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers.
 
 SELECT
+I.InvoiceId,
 I.Total as InvoiceTotal,
 C.FirstName || " " || C.LastName as CustomerName,
 I.BillingCountry,
