@@ -2,6 +2,6 @@
 
 SELECT
 BillingCountry,
-COUNT(InvoiceId) as InvoiceCount
+COUNT(*) as InvoiceCount
 FROM Invoice
 GROUP BY BillingCountry;

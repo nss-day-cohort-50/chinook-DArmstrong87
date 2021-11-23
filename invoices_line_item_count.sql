@@ -2,7 +2,7 @@
 
 SELECT
 I.InvoiceId,
-COUNT(LI.InvoiceLineId) as LineItems
+COUNT(*) as LineItems
 FROM Invoice I
 JOIN InvoiceLine LI
 on LI.InvoiceId = I.InvoiceId

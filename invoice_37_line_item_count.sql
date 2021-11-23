@@ -6,3 +6,8 @@ FROM InvoiceLine L
 JOIN Invoice I
 on I.InvoiceId = L.InvoiceId
 WHERE I.InvoiceId = 37;
+
+-- Concise
+SELECT COUNT(*)
+FROM InvoiceLine
+WHERE InvoiceId = 37;

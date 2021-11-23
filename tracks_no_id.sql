@@ -1,7 +1,7 @@
 -- Provide a query that shows all the Tracks, but displays no IDs. The result should include the Album name, Media type and Genre.
 
 SELECT
-Distinct T.Name as Track,
+T.Name as Track,
 A.Title as AlbumName,
 M.Name as MediaType,
 G.Name as Genre

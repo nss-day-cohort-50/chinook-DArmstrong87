@@ -2,7 +2,7 @@
 
 SELECT
 E.FirstName || " " || E.LastName as SalesAgent,
-Count(Distinct C.CustomerId) as CustomerCount
+Count(C.CustomerId) as CustomerCount
 FROM Employee E
 JOIN Customer C
 ON C.SupportRepId = E.EmployeeId

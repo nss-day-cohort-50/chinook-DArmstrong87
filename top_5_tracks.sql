@@ -2,7 +2,7 @@
 
 
 SELECT T.Name as TrackName,
-sum(IL.UnitPrice * IL.Quantity) as TotalSales
+sum(IL.UnitPrice * IL.Quantity)*count(*) as TotalSales
 FROM Track T
 JOIN InvoiceLine IL
 on T.TrackId = IL.TrackId

@@ -1,7 +1,7 @@
 -- Provide a query that shows the top 3 best selling artists.
 
 SELECT A.Name as Artist,
-sum(IL.UnitPrice * IL.Quantity) as TotalSales
+count(IL.InvoiceLineId) as TotalSales
 FROM Artist A
 JOIN Album Al
 on A.ArtistId = Al.ArtistId

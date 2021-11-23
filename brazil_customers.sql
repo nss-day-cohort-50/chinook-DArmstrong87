@@ -1,4 +1,4 @@
 -- Provide a query only showing the Customers from Brazil.
 
-SELECT * FROM Customer
+SELECT FirstName || " " || LastName as FullName FROM Customer
 WHERE Country = "Brazil";
